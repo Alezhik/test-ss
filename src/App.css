@@ -7,6 +7,39 @@
   pointer-events: none;
 }
 
+.baseLevel { 
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.level {
+  border-left: 2px solid black;
+  display: none;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.active {
+  display: block;
+}
+
+.showButton {
+  margin-left: -8px;
+  margin-right: 8px;
+}
+
+.showAllButton {
+  margin: 15px 5px;
+  width: 150px;
+}
+
+.levelContent {
+  margin-left: 15px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -15,7 +48,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
