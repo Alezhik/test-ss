@@ -45,12 +45,12 @@ const JsonUi = ({ data }) => {
 
   return(
     <div className={classNames("baseLevel")}>
-       <input
+      <input
         className={classNames("showAllButton")}
         type="button"
         onClick={() => clickAll()} value={state === "+" ? "Expand all" : "Collapse all"}
       />
-      <ReturnObject values={data} title="json" defualtExpandetAll={() => defualtExpandetAll()}/>
+      <ReturnObject values={data} title="json" defualtExpandetAll={defualtExpandetAll}/>
     </div>
   );
 }

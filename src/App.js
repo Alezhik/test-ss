@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import enterData from './data';
 import JsonUi from './jsonUi';
+import CustomState from './customState';
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <JsonUi data={enterData} />
+      <br />
+      <CustomState ket="test1" id="test1" />
     </div>
   );
 }
